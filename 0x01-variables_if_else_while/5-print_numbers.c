@@ -1,4 +1,4 @@
-#include <stdio.>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int a=0;
+	int num  = 0;
 
-	while (a <= 10 )
+	while (num <= 10)
 	{
-		printf("%d", a);
-		a += 1;
+		printf("%d", num);
+		num += 1;
 	}
 	printf('\n');
 	return (0);
