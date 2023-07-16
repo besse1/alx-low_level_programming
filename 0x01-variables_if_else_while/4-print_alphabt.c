@@ -21,7 +21,7 @@ int main(void)
 			putchar(lowerCase);
 			lowerCase += 1;
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
