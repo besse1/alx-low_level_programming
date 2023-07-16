@@ -15,12 +15,12 @@ int  main(void)
 		putchar(lowerCase);
 		lowerCase += 1;
 	}
-	while (upperCase <= 'z')
+	while (upperCase <= 'Z')
 	{
 		putchar(upperCase);
 		upperCase += 1;
 	}
 	putchar('\n');
-
 	return (0);
 }
+
