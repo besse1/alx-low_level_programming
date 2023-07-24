@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _atoi - function that convert a string to an integer.
- * @s This is the string
+ * @s String to be checked
  *
  * Return: the int converted from the string
  */
@@ -15,7 +15,7 @@ int _atoi(char *s)
 	len = 0;
 	f = 0;
 	digit = 0;
-	
+
 	while (s[len] != '\0')
 		len++;
 	while (i < len && f == 0)
