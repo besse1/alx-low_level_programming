@@ -3,7 +3,7 @@
 /**
  * _strlen_recursion - to the string length
  *
- * @s:string
+ * @s: string
  * Return: length of the string
  */
 int _strlen_recursion(char *c)
@@ -39,7 +39,7 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	return (compare string(s, 0, strlen recursion(s - 1));
-			}
+	return (compare string(s, 0, strlen recursion(s - 1)));
+}
 
 
