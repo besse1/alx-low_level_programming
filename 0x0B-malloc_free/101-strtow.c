@@ -10,7 +10,7 @@ char **split_string(char **arrystn, char *str);
 /**
 * strtow - this function  splits a string into words
 * @str: a ponter to the string to be operated on
-* Return: returns a pointer to a pointer to a string and NULL if str == NULL or str == ""
+* Return: NULL if str == NULL or str == ""
 */
 char **strtow(char *str)
 {
@@ -72,7 +72,7 @@ int count_words(char *str)
 * count_char - counts the number of characters and stores it
 * @str: the string with the words to be counted
 * @c: the number of words in str
-* Return: returns a pointer to the array and NULL if str == NULL or str == ""
+* Return: NULL if str == NULL or str == ""
 */
 int *count_char(char *str, int c)
 {
@@ -107,7 +107,7 @@ int *count_char(char *str, int c)
 * split_string - puts each word from the original string str.
 * @arrystn: the array of strings
 * @str: the original string
-* Return: returns arrystn as a pointer to a pointer, and NULL if str == NULL or str == ""
+* Return: returns arrystn as a pointer NULL if str == NULL or str == ""
 */
 char **split_string(char **arrystn, char *str)
 {
