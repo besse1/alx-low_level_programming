@@ -8,9 +8,9 @@ char **split_string(char **arrystn, char *str);
 
 
 /**
-* strtow - a function that splits a string into words
+* strtow - this function  splits a string into words
 * @str: a ponter to the string to be operated on
-* Return: returns a pointer to a pointer to a string
+* Return: returns a pointer to a pointer to a string and NULL if it fails.
 */
 char **strtow(char *str)
 {
@@ -32,12 +32,14 @@ char **strtow(char *str)
 
 	arrystn = (char **) malloc(c * sizeof(char *));
 	if (arrystn == NULL)
+
 		return (NULL);
 
 	for (i = 0; i < c; i++)
 	{
 		arrystn[i] = malloc((strlen[i] + 1) * sizeof(char));
 		if (arrystn[i] == NULL)
+
 			return (NULL);
 	}
 
@@ -46,8 +48,7 @@ char **strtow(char *str)
 }
 
 /**
-* count_words - counts the number of words in str, assuming every word is
-* seperated by spaces
+* count_words - counts the number of words in str.
 * @str: a pointer to the string to be counted
 * Return: returns an int
 */
@@ -63,16 +64,15 @@ int count_words(char *str)
 			c++;
 		}
 	}
+
 	return (c);
 }
 
 /**
-* count_char - counts the number of characters in each word and stores it
-* in an array of integers
+* count_char - counts the number of characters and stores it
 * @str: the string with the words to be counted
 * @c: the number of words in str
-* Return: returns a pointer to the array of integers containing
-* the size of each word
+* Return: returns a pointer to the array and NULL if it fails.
 */
 int *count_char(char *str, int c)
 {
@@ -104,11 +104,10 @@ int *count_char(char *str, int c)
 }
 
 /**
-* split_string - puts each word from the original string str into a new
-* an array of strings arrystn, each string in the array is null-terminated
+* split_string - puts each word from the original string str.
 * @arrystn: the array of strings
 * @str: the original string
-* Return: returns arrystn as a pointer to a pointer
+* Return: returns arrystn as a pointer to a pointer, and NULL if it fails
 */
 char **split_string(char **arrystn, char *str)
 {
@@ -134,5 +133,6 @@ char **split_string(char **arrystn, char *str)
 		}
 	}
 	arrystn[k] = NULL;
+
 	return (arrystn);
 }
