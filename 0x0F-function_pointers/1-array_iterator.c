@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
-* array_iterator - function executes a function
-* given as a parameter 
+* array_iterator - function executes a function given as a parameter
 * @array: the array to be operated on
 * @size: the size of the array
 * @action: the acion to be performed on each array element
