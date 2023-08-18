@@ -1,10 +1,9 @@
 #include "variadic_functions.h"
 
 /**
-* print_numbers - a function that prints a variable number of integers
-* @separator: the string to be printed between each integer
-* @n: the number of integers to be printed
-* Return: returns nothing
+* print_numbers - function prints a variable number of integers.
+* @separator: the string to be printed between integers.
+* @n: the number of integers to be printed.
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {

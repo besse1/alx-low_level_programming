@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
-* sum_them_all - a program that returns the sum of all of its paraneters
-* @n: the number of arguments (excluding n itself)
-* Return: returns an int
+* sum_them_all - program returns the sum of all of its paraneters.
+* @n: the number of arguments (excluding n itself).
+* Return: returns int
 */
 int sum_them_all(const unsigned int n, ...)
 {
